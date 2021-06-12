@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     let formatDateString = format(new Date(), 'dd/MM/yyyy kk:mm'); 
-    const apiUrl = `http://localhost:8080/greeting`;
+    const apiUrl = `http://stakater-backend:8080/greeting`;
     fetch(apiUrl)
       .then((res) => res.text())
       .then((repos) => {
